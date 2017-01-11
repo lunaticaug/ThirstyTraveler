@@ -17,10 +17,10 @@ class FactoryDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myData += defaultFactory()
-        
-        currentFactory = myData[0] // to be modified** get info from previous tap
-        
+//        myData += defaultFactory()
+//        
+//        currentFactory = myData[0] // to be modified** get info from previous tap
+//        
         tableView.rowHeight = UITableViewAutomaticDimension
         
         // Uncomment the following line to preserve selection between presentations

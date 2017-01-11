@@ -17,9 +17,9 @@ class BreweryDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myData += defaultBrewery()
+    //    myData += defaultBrewery()
         
-        currentBrewery = myData[0] // to be modified** get info from previous tap
+    //    currentBrewery = myData[0] // to be modified** get info from previous tap
         
         tableView.rowHeight = UITableViewAutomaticDimension
         

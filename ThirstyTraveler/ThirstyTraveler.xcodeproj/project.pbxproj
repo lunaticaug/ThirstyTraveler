@@ -24,6 +24,7 @@
 		A5226C551E1F7741009EC9F7 /* F_ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5226C541E1F7741009EC9F7 /* F_ProgramTableViewCell.swift */; };
 		A5226C571E1F774A009EC9F7 /* F_URLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5226C561E1F774A009EC9F7 /* F_URLTableViewCell.swift */; };
 		A5DEB9711E1F76A300C30058 /* B_ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DEB9701E1F76A300C30058 /* B_ProfileTableViewCell.swift */; };
+		DA07C1101E2679FC00AA37FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07C10F1E2679FC00AA37FF /* DetailViewController.swift */; };
 		DA2178071D641882005C2F9D /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2178061D641882005C2F9D /* Brewery.swift */; };
 		DA354CDF1D66C79E00CC89B3 /* FavoBeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */; };
 		DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */; };
@@ -95,6 +96,7 @@
 		A5226C541E1F7741009EC9F7 /* F_ProgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F_ProgramTableViewCell.swift; sourceTree = "<group>"; };
 		A5226C561E1F774A009EC9F7 /* F_URLTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F_URLTableViewCell.swift; sourceTree = "<group>"; };
 		A5DEB9701E1F76A300C30058 /* B_ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = B_ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DA07C10F1E2679FC00AA37FF /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		DA2178061D641882005C2F9D /* Brewery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
 		DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoBeenViewController.swift; sourceTree = "<group>"; };
 		DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favobeenTableViewCell.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */,
 				DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */,
 				DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */,
+				DA07C10F1E2679FC00AA37FF /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				DDFB00511D6C125E0037BF23 /* FactoryDetailTableViewController.swift in Sources */,
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
 				A5226C551E1F7741009EC9F7 /* F_ProgramTableViewCell.swift in Sources */,
+				DA07C1101E2679FC00AA37FF /* DetailViewController.swift in Sources */,
 				A5226C4F1E1F7722009EC9F7 /* B_BottleBeerTableViewCell.swift in Sources */,
 				DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */,
 				DDB774501DD596730058CE0A /* D_ProfileTableViewCell.swift in Sources */,
