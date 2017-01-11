@@ -28,3 +28,6 @@ class favobeenTableViewCell: UITableViewCell {
     }
 
 }
+
+
+/* 요이요이요이요 이천십칠년 일월 십일일 */ 
