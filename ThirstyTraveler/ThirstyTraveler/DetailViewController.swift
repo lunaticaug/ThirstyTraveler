@@ -11,10 +11,11 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var currentPlace:BeerPlace? = nil
+    var currentPlace:BeerPlace? = nil //segway로 부터 전달받은 값
+    
     var factoryController = FactoryDetailTableViewController()
     var breweryController = BreweryDetailTableViewController()
-    var draftController = DraftDetailTableViewController()
+    var draftController = DraftDetailTableViewController() 
     
     
     override func viewDidLoad() {
