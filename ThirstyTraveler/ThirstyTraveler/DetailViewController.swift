@@ -63,7 +63,7 @@ class DetailViewController: UIViewController {
                 
             case 2:
                 embededVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("DraftDetail") as! DraftDetailTableViewController
-                    draftController.currentDraft = (currentPlace as! DraftBeer)
+                    draftController.currentDraft = currentPlace
                     draftController.viewDidLoad()
                 break
                 

@@ -12,10 +12,13 @@ class DraftDetailTableViewController: UITableViewController {
     
     
     var myData:[DraftBeer] = []
-    var currentDraft:DraftBeer? = nil
+    var currentDraft:BeerPlace? = nil
+    var currentItem:DraftBeer? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        currentItem = currentDraft as! DraftBeer
         
        //myData += defaultDraft()
         
@@ -50,13 +53,13 @@ class DraftDetailTableViewController: UITableViewController {
             rowCount = 1
         }
         if section == 1{
-            rowCount = currentDraft!.officeTime.count
+            rowCount = currentItem!.officeTime.count
         }
         if section == 2{
-            rowCount = currentDraft!.draftPriceList.count
+            rowCount = currentItem!.draftPriceList.count
         }
         if section == 3{
-            rowCount = currentDraft!.bottledDPriceList.count
+            rowCount = currentItem!.bottledDPriceList.count
         }
         
         return rowCount
@@ -84,7 +87,7 @@ class DraftDetailTableViewController: UITableViewController {
         
         //configure the cell
         
-        if let cleanDraft = currentDraft{
+        if let cleanDraft = currentItem{
             let openTime:OpenTime = cleanDraft.officeTime[indexPath.row]
             
             func vacay(openTime: OpenTime) -> String{
