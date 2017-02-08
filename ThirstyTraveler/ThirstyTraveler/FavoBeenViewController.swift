@@ -96,7 +96,8 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     
     
     
-    @IBAction func FavoBeenEmbed(sender: UISegmentedControl){
+    @IBAction func FavoBeenEmbed(sender: UISegmentedControl) {
+        
         switch(FavoBeen.selectedSegmentIndex)
         {
         case 0:
@@ -118,6 +119,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         
         return
     }
+
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
         

@@ -11,59 +11,49 @@ import UIKit
 class DraftDetailTableViewController: UITableViewController {
     
     
-    var myData:[DraftBeer] = []
     var currentDraft:BeerPlace? = nil
     var currentItem:DraftBeer? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        currentItem = currentDraft as! DraftBeer
+        currentItem = currentDraft as? DraftBeer
+        // 여기까지 current Draft, current Item에 값 할당 ㅇㅋ
+      
         
-       //myData += defaultDraft()
+        //tableView.rowHeight = UITableViewAutomaticDimension
         
-       //currentDraft = myData[0] // to be modified** get info from previous tap
-        
-        tableView.rowHeight = UITableViewAutomaticDimension
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
+// 왜 nil값으로 바뀌었지? ㅠㅠ 
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 3
     }
 
+    
+    /* 커스텀 테이블 뷰 섹션별 셀의 갯수 할당 */
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        var rowCount:Int = 0
+        var rowCount:Int = 1
         
         if section == 0{
-            rowCount = 1
-        }
-        if section == 1{
             rowCount = currentItem!.officeTime.count
         }
-        if section == 2{
+        if section == 1{
             rowCount = currentItem!.draftPriceList.count
         }
-        if section == 3{
+        if section == 2{
             rowCount = currentItem!.bottledDPriceList.count
         }
         
         return rowCount
-    }
+    } // NORIS끝 
+    
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
@@ -162,49 +152,5 @@ class DraftDetailTableViewController: UITableViewController {
         
     }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
